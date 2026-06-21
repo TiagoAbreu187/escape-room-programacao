@@ -6,7 +6,7 @@ def game(reais):
     tentativas = 0
     
     try:
-        menu = int(input("Escolha uma dificuldade!\n1 para 100 números\n2 para 500 números\n3 para 1000 números\nEscreva aqui->"))
+        menu = int(input("Escolha uma dificuldade!\n1 para 100 números 1.1x\n2 para 500 números 2x\n3 para 1000 números 3x\nEscreva aqui->"))
     except ValueError:
         print("Digite apenas números!")
         return
