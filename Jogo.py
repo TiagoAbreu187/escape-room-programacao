@@ -1,9 +1,14 @@
 import random
 import winsound
+import time
 
 def game():
     tentativas = 0
     try:
+        print("Sorteando multiplicador...")
+        time.sleep(2)
+        multiplicador = random.choices(range(1, 16),weights=[90, 40, 25, 15, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],k=1)[0]
+        print("Multiplicador Sorteado =",multiplicador)
         menu = int(input("Escolha uma dificuldade!\n1 para 100 números\n2 para 500 números\n3 para 1000 números\nEscreva aqui->"))
     except ValueError:
         print("Digite apenas números!")
