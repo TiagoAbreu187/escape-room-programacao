@@ -1,4 +1,5 @@
 import random
+import winsound
 
 def game():
     tentativas = 0
@@ -38,6 +39,9 @@ def game():
         else:
             print("Você acertou em",tentativas,"tentativas!")
             if tentativas == 1:
+                winsound.Beep(1000, 150)
+                winsound.Beep(1500, 150)
+                winsound.Beep(2000, 150)
                 print("Você é muito sortudo!")
             elif tentativas >=2 and tentativas <=4:
                 print("Você é bom!")
